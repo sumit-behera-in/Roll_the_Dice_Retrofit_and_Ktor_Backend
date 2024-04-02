@@ -1,15 +1,16 @@
 package server.sumit.plugins
 
-import io.ktor.server.application.*
-import io.ktor.server.http.content.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import io.ktor.server.application.Application
+import io.ktor.server.http.content.resources
+import io.ktor.server.http.content.static
+import io.ktor.server.routing.routing
+import server.sumit.routes.randomRabbit
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+
+        randomRabbit()
+
         // Static plugin. Try to access `/static/index.html`
         static("/static") {
             resources("static")
