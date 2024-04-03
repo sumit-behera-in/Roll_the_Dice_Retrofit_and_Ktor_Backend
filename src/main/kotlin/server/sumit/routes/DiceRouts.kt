@@ -6,46 +6,46 @@ import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
 import server.sumit.Constants.BASE_URL
-import server.sumit.data.model.Rabbit
+import server.sumit.data.model.Dice
 
-private val rabbits = listOf<Rabbit>(
-    Rabbit(
+private val dice = listOf<Dice>(
+    Dice(
         name = "1",
         description = "One",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice1.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice1.xml"
     ),
-    Rabbit(
+    Dice(
         name = "2",
         description = "Two",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice2.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice2.xml"
     ),
-    Rabbit(
+    Dice(
         name = "3",
         description = "Three",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice3.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice3.xml"
     ),
-    Rabbit(
+    Dice(
         name = "4",
         description = "Four",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice4.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice4.xml"
     ),
-    Rabbit(
+    Dice(
         name = "5",
         description = "Five",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice5.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice5.xml"
     ),
-    Rabbit(
+    Dice(
         name = "6",
         description = "Six",
-        imageUrl = "$BASE_URL/static/rabbitsPhotos/dice6.jpg"
+        imageUrl = "$BASE_URL/static/dice/dice6.xml"
     )
 )
 
-fun Route.randomRabbit() {
-    get(path = "/random-rabbit") {
+fun Route.randomDice() {
+    get(path ="/random") {
         call.respond(
             HttpStatusCode.OK,
-            rabbits.random()
+            dice.random()
         )
     }
 }
