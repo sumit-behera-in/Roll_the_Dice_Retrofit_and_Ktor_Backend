@@ -12,32 +12,32 @@ private val dice = listOf<Dice>(
     Dice(
         name = "1",
         description = "One",
-        imageUrl = "$BASE_URL/static/dice/dice1.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice1.svg"
     ),
     Dice(
         name = "2",
         description = "Two",
-        imageUrl = "$BASE_URL/static/dice/dice2.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice2.svg"
     ),
     Dice(
         name = "3",
         description = "Three",
-        imageUrl = "$BASE_URL/static/dice/dice3.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice3.svg"
     ),
     Dice(
         name = "4",
         description = "Four",
-        imageUrl = "$BASE_URL/static/dice/dice4.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice4.svg"
     ),
     Dice(
         name = "5",
         description = "Five",
-        imageUrl = "$BASE_URL/static/dice/dice5.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice5.svg"
     ),
     Dice(
         name = "6",
         description = "Six",
-        imageUrl = "$BASE_URL/static/dice/dice6.xml"
+        imageUrl = "$BASE_URL/static/dice/Dice6.svg"
     )
 )
 
